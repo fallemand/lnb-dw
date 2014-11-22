@@ -1,0 +1,2 @@
+dtexec /Project "C:\ETL LNB.ispac" /Package ETLMaster.dtsx
+susana debe 1111$
