@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="FACU-NOTEBOOK_SQLEXPRESS.TablaHecho1"
+  DTS:DTSID="{211E62D7-3192-4D45-9348-947EC4C7B704}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=FACU-NOTEBOOK\SQLEXPRESS;Initial Catalog=TablaHecho;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

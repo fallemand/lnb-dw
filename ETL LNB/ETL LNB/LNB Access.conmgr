@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LNB Access"
+  DTS:DTSID="{D3D9CE97-5868-420B-8543-F24E718F89AD}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
