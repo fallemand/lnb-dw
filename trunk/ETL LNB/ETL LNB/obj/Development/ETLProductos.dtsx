@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/8/2014 8:22:22 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="FACU-NOTEBOOK"
+  DTS:CreatorName="Facu-Notebook\Facu"
+  DTS:DTSID="{54ADC08E-CBDE-43D9-9275-BAEAA25C52E4}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.3436.0"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="ETLProductos"
+  DTS:PackageType="5"
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{F2D586CC-0C61-4B54-80C1-93299B07ED9C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7BD61089-558B-4DC7-84DA-974DBB88E587}"
+      DTS:ObjectName="D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B70A0816-C164-46F2-9639-CBD92279A1B4}"
+      DTS:ObjectName="D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FACU-NOTEBOOK\SQLEXPRESS.TablaHecho1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F2E7E74A-BE06-4F25-B26A-6A5A8D5FA6A1}"
+      DTS:ObjectName="FACU-NOTEBOOK\SQLEXPRESS.TablaHecho1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=FACU-NOTEBOOK\SQLEXPRESS;Initial Catalog=TablaHecho;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql11">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

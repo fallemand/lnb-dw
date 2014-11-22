@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Movi Actualizada 10-10-2014"
+  DTS:DTSID="{8DDF40E8-C2D9-4D82-9740-0A5D44FD84CC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
