@@ -1,0 +1,38 @@
+Tabla Hechos
+SELECT  IIf (s.ID Is Null , 0 , s.ID) as idProducto, 
+(format(hv.Fecha,"yyyymmdd") & format(hv.Hora,"hh")) as idTiempo, 1 as idSucursal, 
+hc.TipoPago as idMedioPago, SUM(hv.Cant) as cantidadArticulosVendida, COUNT(hv.CodVta) as cantidadVentasRealizadas, 
+SUM(hv.SubT) as total, 
+IIf (((hv.Fecha<=#01/10/2014#) OR SUM(s.PrecCosto)*2.5<=SUM(hv.Prec) OR SUM(hv.Prec)<=SUM(s.PrecCosto)) , Null , ROUND(SUM((hv.Prec - s.PrecCosto)*hv.Cant),2)) as gananciaTotal
+FROM ((Historico_Ventas hv
+INNER JOIN Historico_Caja hc ON hv.CodVta=hc.CodVta)
+LEFT JOIN Stock s ON s.Cod=hv.codArt)
+WHERE hv.codArt<>'ValeEnvase' AND hv.Id<>55708
+GROUP BY hv.Fecha, s.Cod, s.ID, hc.TipoPago, format(hv.Hora,"hh")
+
+Sumarizada - Rubros por Hora
+SELECT r.Id as idRubro, (format(hv.Fecha,"yyyymmdd") & format(hv.Hora,"hh")) as idTiempo,
+SUM(hv.Cant) as cantidadArticulosVendida, SUM(hv.SubT) as montoTotal, ROUND(SUM((hv.Prec - s.PrecCosto)*hv.Cant),2) as gananciaTotal
+FROM (((Historico_Ventas hv
+INNER JOIN Historico_Caja hc ON hv.CodVta=hc.CodVta)
+INNER JOIN Stock s ON s.Cod=hv.codArt)
+INNER JOIN Rubros r ON r.Rubro=s.Rubro)
+WHERE hv.Prec>0 AND YEAR(hv.Fecha) >= 2014 AND MONTH(hv.Fecha)>=9
+GROUP BY hv.Fecha, format(hv.Hora,"hh"), r.Id
+
+Sumarizada2- MedioPago por Hora
+SELECT (format(hv.Fecha,"yyyymmdd") & format(hv.Hora,"hh")) as idTiempo, 1 as idSucursal, 
+hc.TipoPago as idMedioPago, COUNT(hv.CodVta) as cantidadVentas, SUM(hv.SubT) as montoTotal, ROUND((SUM(hv.SubT)/COUNT(hv.CodVta)),2) as promedioPorVenta
+FROM (Historico_Ventas hv
+INNER JOIN Historico_Caja hc ON hv.CodVta=hc.CodVta)
+WHERE hv.Prec>0
+GROUP BY hv.Fecha, hc.TipoPago, format(hv.Hora,"hh")
+
+Sumarizada3 - Prod x Semana
+SELECT YEAR(hv.Fecha) as idAnio, DatePart ("ww", hv.Fecha) as idSemanaAnio, s.ID as idProducto,
+SUM(hv.Cant) as cantidadArticulosVendidaProd, SUM(hv.SubT) as montoTotalProd, ROUND(SUM((hv.Prec - s.PrecCosto)*hv.Cant),2) as gananciaTotalProd
+FROM ((Historico_Ventas hv
+INNER JOIN Historico_Caja hc ON hv.CodVta=hc.CodVta)
+INNER JOIN Stock s ON s.Cod=hv.codArt)
+WHERE hv.Prec>0 AND YEAR(hv.Fecha) >= 2014 AND MONTH(hv.Fecha)>=9
+GROUP BY YEAR(hv.Fecha), DatePart ("ww", hv.Fecha), s.ID
