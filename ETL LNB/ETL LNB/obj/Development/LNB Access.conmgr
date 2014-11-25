@@ -5,6 +5,6 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;" />
+      DTS:ConnectionString="Data Source=E:\Documentos\Visual Studio 2012\Projects\lnb-dw\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

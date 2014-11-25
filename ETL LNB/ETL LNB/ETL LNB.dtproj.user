@@ -4,8 +4,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <ServerName>FACU-NOTEBOOK\SQL</ServerName>
-        <PathOnServer>/SSISDB/LNB ETL/ETL LNB</PathOnServer>
+        <ServerName>FACU-PC\SQLEXPRESS</ServerName>
+        <PathOnServer>/SSISDB/LNB/ETL LNB</PathOnServer>
         <StartObjectID>ETLMaster.dtsx</StartObjectID>
         <Run64BitRuntime>true</Run64BitRuntime>
         <UserIDs />
