@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="ETLMaster"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{464742AB-B84E-48F2-815A-D678DB084479}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{27F31F86-07EC-4470-9100-1F3BD2610B48}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:Variables />
@@ -4406,7 +4406,7 @@ where `refTable`.`Nom` = ?</property>
 (format(hv.Fecha,"yyyymmdd") &amp; format(hv.Hora,"hh")) as idTiempo, 1 as idSucursal, 
 hc.TipoPago as idMedioPago, SUM(hv.Cant) as cantidadArticulosVendida, COUNT(hv.CodVta) as cantidadVentasRealizadas, 
 SUM(hv.SubT) as total, 
-IIf (((hv.Fecha&lt;=#01/10/2014#) OR SUM(s.PrecCosto)*2.5&lt;=SUM(hv.Prec) OR SUM(hv.Prec)&lt;=SUM(s.PrecCosto)) , Null , ROUND(SUM((hv.Prec - s.PrecCosto)*hv.Cant),2)) as gananciaTotal
+IIf (((hv.Fecha&lt;=#01/10/2014#) OR SUM(s.PrecCosto)*2.05&lt;=SUM(hv.Prec) OR SUM(hv.Prec)&lt;=SUM(s.PrecCosto)) , Null , ROUND(SUM((hv.Prec - s.PrecCosto)*hv.Cant),2)) as gananciaTotal
 FROM ((Historico_Ventas hv
 INNER JOIN Historico_Caja hc ON hv.CodVta=hc.CodVta)
 LEFT JOIN Stock s ON s.Cod=hv.codArt)

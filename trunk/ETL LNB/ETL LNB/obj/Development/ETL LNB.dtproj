@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">FACU-NOTEBOOK</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAakWflv45tUqO2O/CD6ogeAAAAAACAAAAAAAQZgAAAAEAACAAAACiTcc3lgNnyczHTXmuzkDBviu5fehA6YcuvbuQbvY/VAAAAAAOgAAAAAIAACAAAABYmxoxWMsecx9TuQzfzyQjgBB/9rvOcLNXJdd7/X2u35AAAAClDbPgcNQjMmT6w2QbtANBMIuNWo5ZujiwFROCSjMImqFSes3gKAjxfslMYl6OCtzi3IhVNxTwpO/17FIanH/J6p0SnWqyb3q4a2dX97yo0oUdz3dhAxrvby4LIdL0Wh/2VZB32Abzbzns2AIF9pz9KYEt+Yan9hAu5BXsOhL3AfupoUUaWO6gMWXVukOgpu9AAAAAEyKbcCKCorh1nCHGWxKbnyc89IfpZgG7HNcsiskV85rLFxBRjYqXokGU2QnAojB/iGLvQs/SPwSsgHU6BZIRQg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzV3nxk9jUEG7xsrnA2+kBQAAAAACAAAAAAAQZgAAAAEAACAAAADlzThCMMXIvMH0H7eLT3CoxxmdO4ZCF8zr6cpM86R2hQAAAAAOgAAAAAIAACAAAACOaivnXRv4CVOr5fUR+F8BtM9c6Q96sTbP+NraeV0YE5AAAACHAn1TCM4qiA8z/y8IE//9tw4dP3y8BdQLAnOauxDN9kq0nMF2XIluJgJA11Tb0G4vSMjr++2dRMxTsdHDtRVQWeXuoP7+sakLgCh2ag/Oc4fePYarQakr7DVyzXeNrgOEByyQx5zwEGE5AGlTbA3Eqw+2i5NyEdIrsezGKEHSJb/i+ejxcLVO3mY7e8M6N6dAAAAAsQG1oGGIrHD3VZzgWsHXrfEKRxzXSiRdthPa1tkrMQxbmfQD9bwlISY+7j/5u7ktQSh15tMNpsU99eK3donscw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -49,7 +49,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=E:\Documentos\Visual Studio 2012\Projects\lnb-dw\Movi Actualizada 10-10-2014.mdb;Provider=Microsoft.Jet.OLEDB.4.0;Persist Security Info=True;Jet OLEDB:Database Password=jose;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -107,7 +107,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">D:\Escritorio\LNB\Movi Actualizada 10-10-2014.mdb</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">E:\Documentos\Visual Studio 2012\Projects\lnb-dw\Movi Actualizada 10-10-2014.mdb</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -136,7 +136,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=FACU-NOTEBOOK\SQLEXPRESS;Initial Catalog=LNB DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=FACU-PC\SQLEXPRESS;Initial Catalog=LNB DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -195,7 +195,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">FACU-NOTEBOOK\SQLEXPRESS</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">FACU-PC\SQLEXPRESS</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -221,10 +221,10 @@
                 <SSIS:Property SSIS:Name="Name">ETLMaster</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">40</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">41</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{464742AB-B84E-48F2-815A-D678DB084479}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{27F31F86-07EC-4470-9100-1F3BD2610B48}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">6</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
